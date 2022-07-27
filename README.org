@@ -6,7 +6,7 @@
 Clone this repo to this directory "~/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6_5/keymaps"
 
 #+begin_src bash
-git clone ~/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6_5/keymaps
+git clone git@github.com:sahidrahman404/dactylMiryoku.git ~/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6_5/keymaps/dactylMiryoku
 #+end_src
 
 ** Step 2: Flash the keyboard
@@ -14,5 +14,5 @@ git clone ~/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6_5/keymaps
 To flash the keyboard run this command on your terminal
 
 #+begin_src bash
-qmk flash -kb handwired/dactyl_manuform/5x6_5 -km
+qmk flash -kb handwired/dactyl_manuform/5x6_5 -km dactylMiryoku
 #+end_src
