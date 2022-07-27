@@ -1,0 +1,20 @@
+#+title: Readme
+
+* Keyboard Layout for Dactyl Manuform 5X6_5 With Miryoku Keymap
+
+** Flashing
+*** Step 1: Clone this repo
+
+Clone this repo to this directory "~/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6_5/keymaps"
+
+#+begin_src bash
+git clone ~/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6_5/keymaps
+#+end_src
+
+*** Step 2: Flash the keyboard
+
+To flash the keyboard run this command on your terminal
+
+#+begin_src bash
+qmk flash -kb handwired/dactyl_manuform/5x6_5 -km
+#+end_src
