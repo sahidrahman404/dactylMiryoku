@@ -20,23 +20,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-/* mouse config */
-#define MOUSEKEY_INTERVAL    20
-#define MOUSEKEY_DELAY       0
-#define MOUSEKEY_TIME_TO_MAX 60
-#define MOUSEKEY_MAX_SPEED   7
-#define MOUSEKEY_WHEEL_DELAY 0
+/* key matrix size */
+// Rows are doubled-up
+#define MATRIX_ROWS 12
+#define MATRIX_COLS 6
 
-/* Set 0 if debouncing isn't needed */
-#define DEBOUNCE 5
+// wiring of each half
+#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
+#define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
 
-/* serial.c configuration for split keyboard */
-#define SOFT_SERIAL_PIN D0
+#define DIODE_DIRECTION COL2ROW
 
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+// WS2812 RGB LED strip input and number of LEDs
+#define RGB_DI_PIN D3
+#define RGBLED_NUM 12
 
-/* Enables This makes it easier for fast typists to use dual-function keys */
-#define PERMISSIVE_HOLD
+/* define if matrix has ghost */
+//#define MATRIX_HAS_GHOST
+
+/* number of backlight levels */
+// #define BACKLIGHT_LEVELS 3
